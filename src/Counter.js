@@ -1,33 +1,33 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Counter.css'
 
 export default class Counter extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            counter : 0,
-        } 
+            counter: 0,
+        }
     }
 
-    increment=()=>{
-        this.setState((prevState)=>({
-            counter : prevState.counter + 1,
+    increment = () => {
+        this.setState((prevState) => ({
+            counter: prevState.counter + 1,
         }))
     }
     decrement = () => {
         this.setState((prevState) => ({
-          counter: prevState.counter - 1,
+            counter: prevState.counter - 1,
         }));
-      };
-    reset = ()=>{
+    };
+    reset = () => {
         this.setState((prevState) => ({
-            counter : 0,
+            counter: 0,
         }))
     }
 
     render() {
-        const {counter} = this.state;
+        const { counter } = this.state;
 
         return (
             <div>
@@ -36,11 +36,11 @@ export default class Counter extends Component {
                 <br />
 
                 <button className='increment button1' onClick={this.increment}>High</button>
-                
+
                 <button className='reset button1 ' onClick={this.reset}>Reset</button>
-                
+
                 <button className='decrement button1' onClick={this.decrement}>Low</button>
-                
+
 
             </div>
         )

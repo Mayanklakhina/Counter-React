@@ -1,0 +1,29 @@
+.div1 {
+    height : 50vh;
+    width : 50vw;
+    border : 1px solid black;
+    margin : auto;
+    margin-top : 5rem;
+    display : flex;
+}
+
+
+.btn {
+    margin-left : 20px;
+    color : white;
+    font-size: 17px;
+    border : none;
+    height : 2.5rem;
+    width : 6rem;
+    border-radius : 6px;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight : bold;
+    cursor : pointer;
+    background-color : black;
+    margin-top : 50px;
+    margin : auto;
+}
+
+.btn:hover{
+    background-color: rgb(59, 59, 59);
+}
